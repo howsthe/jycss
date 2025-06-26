@@ -29,9 +29,9 @@ header nav .gnb:hover li:hover {opacity: 1;font-family: 'Paperlogy-3Light';filte
 header nav .gnb li{font-size: 24px;}
 header nav .gnb li a {color: #fff;padding: 25px;display: block;padding: 25px;}
 
-#visual .text {width: 350px; height: 610px; color: #fff;font-family: 'Paperlogy-4Regular';
+#visual .text {width: 350px; height: 610px; color: #fff;font-family: 'Continuous';
     position: absolute;
-    left: 50%; transform: translate(300px, 200px);font-size: 24px;text-align: center;}
+    left: 50%; transform: translate(300px, 200px);font-size: 30px;text-align: center;}
 
 #visual .text ul {display: flex;gap: 20px;font-style: italic;justify-content: flex-start;
                   flex-direction: row-reverse;}
