@@ -29,7 +29,7 @@
             </nav>
         </header>
         <div class="playbtn">
-            <audio id="audio" src="music/Gymnop_ie No. 1.mp4" controls></audio>
+            <audio id="audio" src="music/Gymnop_ie No. 1.mp4" ></audio>
             <img id="playBtn" src="images/start.png" alt="플레이">
             <img id="pauseBtn" src="images/pause.png" alt="일시정지">
         </div>
@@ -75,6 +75,42 @@
             </ul>
         </div>
     </div>
+<script>setTimeout(function() {
+    audio.play().then(function() {
+        playBtn.style.display = 'none';
+        pauseBtn.style.display = 'inline';
+        pauseBtn.classList.add('pulse'); // 애니메이션 효과 추가
 
+        setTimeout(function() {
+            audio.muted = false;
+        }, 1000);
+    }).catch(function(err) {
+        console.log("자동재생 실패:", err);
+    });
+}, 5000);
+
+// 재생 버튼
+playBtn.addEventListener('click', function() {
+    audio.play();
+    audio.muted = false;
+    playBtn.style.display = 'none';
+    pauseBtn.style.display = 'inline';
+    pauseBtn.classList.add('pulse'); // 재생 시 애니메이션 추가
+});
+
+// 일시정지 버튼
+pauseBtn.addEventListener('click', function() {
+    audio.pause();
+    pauseBtn.style.display = 'none';
+    playBtn.style.display = 'inline';
+    pauseBtn.classList.remove('pulse'); // 정지 시 애니메이션 제거
+});
+
+// 음악이 끝나면 버튼 초기화
+audio.addEventListener('ended', function() {
+    pauseBtn.style.display = 'none';
+    playBtn.style.display = 'inline';
+    pauseBtn.classList.remove('pulse'); // 음악 끝나면 애니메이션 제거
+});</script>
 </body>
 </html>
