@@ -1,0 +1,215 @@
+@charset "UTF-8" ;
+              @font-face {
+    font-family: 'SpoqaHanSansNeo-Thin';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Thin.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+              @font-face {
+    font-family: 'SpoqaHanSansNeo-Light';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Light.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+              @font-face {
+    font-family: 'SpoqaHanSansNeo-Regular';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+              @font-face {
+    font-family: 'SpoqaHanSansNeo-Medium';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Medium.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+              @font-face {
+    font-family: 'SpoqaHanSansNeo-Bold';
+    src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/SpoqaHanSansNeo-Bold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+/* 기본 리셋 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+h1 {font-family: "Arita Buri KR";}
+li {list-style: none;}
+a {color: #333; text-decoration: none;}
+img {display: block;}
+
+body {
+  font-family: "Spoqa Han Sans Neo", sans-serif;
+}
+
+header {
+  width: 100%;
+  border-bottom: 1px solid #ddd;
+}
+
+.center_box {
+  max-width: 1420px;
+  height: 90px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  padding: 10px 20px;
+  position: relative;
+}
+
+/* 로고 */
+.logo a {
+  font-family: "Arita Buri KR", serif;
+  font-size: 28px;
+  font-weight: bold;
+  text-decoration: none;
+  color: #000;
+}
+
+/* GNB 메뉴 */
+.gnb {
+  display: flex;
+  gap: 60px;
+  list-style: none;
+  margin-left: -85px;
+}
+
+.gnb li a {
+  text-decoration: none;
+  font-size: 16px;
+  color: #444;
+  transition: color 0.3s;
+}
+
+.gnb li a:hover {
+  color: #000;
+}
+
+/* 우측 로그인 + 아이콘 */
+.util_box {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 22px;
+}
+
+.login_box a {
+  font-size: 13px;
+  color: #555;
+  text-decoration: none;
+  margin-left: 4px;
+}
+
+.icon {
+  display: flex;
+  gap: 14px;
+  list-style: none;
+}
+
+
+
+#visual {}
+
+#visual .img_box {
+  width: 1420px;
+  
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin: 0 auto;
+}
+
+#visual .left {margin-right: 8px;
+  background: url("../images/main1.png")no-repeat;
+  width: 938px;
+  height: 653px;
+position: relative;}
+#visual .left p {position: absolute;top:214px;left: 121px;color:#fff;font-size: 33px;font-family: "Spoqa Han Sans Neo";}
+#visual .left .text_box {background: #403C3C;position: absolute;justify-content: center;padding: 7px 10px;top: 360px;left: 131px;}
+#visual .left em {color: #9E9E9E;font-size: 20px;font-family: "Arita Buri KR" bold;font-style: normal;}
+/* #visual .right li:nth-child(2) {border: 1px solid white;} */
+
+#visual .right {
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+}
+#visual .right ul {padding: 0;}
+#visual .right li {
+  width: 473px;
+  height: 212px;
+  position: relative;
+}
+#visual .right p {z-index: 10; color: #000; position: absolute; left: 32px; top: 23px; color: #fff;font-family: "Arita Buri KR" bold;}
+
+
+/* #visual ul img {
+  width: 100%;
+} */
+
+#visual .left {justify-content: space-between;}
+#section {display: flex;width: 1416px;margin: 0 auto;}
+#section .sec_box {width: 708px;height: 363px;/* align-items: center; */}
+#section .sec_box p {font-size: 23px;margin-left: 231px;bottom: 120px;}
+#section .sec_box h2 {font-family: "Arita Buri KR" ;font-size: 78px;padding-left: 100px;margin-right: 9px;margin-top: 120px;}
+#section .sec_box h2 em{font-family: 'SpoqaHanSansNeo-light';font-size: 46px;color: #878787;font-style: normal;}
+#section .sec2_box {width: 708px;height: 363px;font-size: 21px;;padding-top: 160px;padding-left: 100px ;}
+#section .sec2_box span {font-family: "Spoqa Han Sans Neo";color: #878787;}
+
+#content {height: 900px;background: #A67C52}
+ .main_text {font-family:"Arita Buri KR";font-size: 60px;color: #fff;}
+ .sub_text {font-family: "Spoqa Han Sans Neo";font-size: 25px;color: #E3E3E3;}
+ .content_text {font-family: "Spoqa Han Sans Neo";font-size: 15px;color: #DBDBDB ;}
+
+#content .box_main {margin: 0 auto;width: 1420px;display: flex;justify-content: space-between;}
+#content .box_main .content_box1 {padding-top: 247px;}
+#content .box_main .content_box1 .main_text{margin-bottom: 10px;}
+#content .box_main .content_box1 .sub_text{margin-bottom: 20px;}
+#content .box_main .content_box1 .content_text{}
+#content .bd_box {width: 708px;height: 900px;justify-content: end;display: flex;padding-top: 247px;}
+#content .bd_box .box{width: 549px;height: 406px;background: white;padding: 36px;}
+#content .bd_box .box .main_img{}
+
+#content2 {height: 900px;background: #3C3C3C}
+#content2 .box_main2 {margin: 0 auto;width: 1420px;display: flex;justify-content: space-between;}
+#content2 .box_main2 .content_box2 {padding-top: 247px;}
+#content2 .box_main2 .content_box2 .main_text{margin-bottom: 10px;}
+#content2 .box_main2 .content_box2 .sub_text{margin-bottom: 20px;}
+#content2 .box_main2 .content_box2 .content_text{}
+#content2 .bd_box {width: 708px;height: 900px;justify-content: end;display: flex;padding-top: 247px;}
+#content2 .bd_box .box{width: 549px;height: 406px;background: white;padding: 36px;}
+#content2 .bd_box .box .main_img{}
+
+#content3 {height: 900px;background: #fff}
+#content3 .box_main3 {margin: 0 auto;width: 1420px;display: flex;justify-content: space-between;}
+#content3 .box_main3 .content_box3 {padding-top: 247px;color: #3C3C3C;}
+#content3 .box_main3 .content_box3 .main_text{margin-bottom: 10px;color: #3C3C3C;font-family:"Arita Buri KR"}
+#content3 .box_main3 .content_box3 .sub_text{margin-bottom: 20px;color: #3C3C3C;font-family: "Spoqa Han Sans Neo"}
+#content3 .box_main3 .content_box3 .content_text{color: #3C3C3C;font-family: "Spoqa Han Sans Neo"}
+#content3 .bd_box {width: 708px;height: 900px;justify-content: end;display: flex;padding-top: 247px;}
+#content3 .bd_box .box{width: 549px;height: 406px;background: #979797;padding: 36px;}
+#content3 .bd_box .box .main_img{}
+
+section {width: 1420px;margin: 0 auto;display: flex;position: relative;}
+section .section_box1 {width: 706px;height: 1169px;position: relative;}
+section .section_box1 .sh_box {width: 586px;height: 666px;background: #baa799;}
+section .section_box1 .sec_img {position: absolute;top: 83px;left: 119px;}
+section .section_box1 .text {margin-left: 116px;margin-top: 216px;}
+section .section_box1 .text strong {font-family: "Arita Buri KR";font-size: 69px;}
+section .section_box1 .text p {font-family: "Arita Buri KR";font-size: 24px;}
+
+section .section_box2 {width: 714px;height: 1169px;position: relative;}
+section .section_box2 .vector_box {display: flex;justify-content: end;}
+section .section_box2 .vector_box .vector {position: absolute;bottom: 41px;left: 0;}
+section .section_box2 .vector_box .text {font-size: 21px;font-family: "Spoqa Han Sans Neo";margin-left: 20px;}
+section .section_box2 .section_img2 {position: relative;display: flex;justify-content: end;}
+section .section_box2 .section_img2 .sh_box{width: 586px;height: 666px;background: #464646;margin-top: 281px;}
+section .section_box2 .section_img2 .sec_img{position: absolute;top: 364px;right: 61px;}
+/* section h1 {font-size: 59px;position: absolute;bottom: -150px;left: -125px} */
+.map_box {width: 1420px;margin: 0 auto;margin-top: 120px;display: flex;}
+.map_box .map {margin: 0 auto;}

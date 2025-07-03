@@ -1,116 +1,172 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>She walk slowly to me</title>
-    <link rel="stylesheet" href="css/comfortable.css">
-    <link rel="stylesheet" href="css/font.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>CAFÉ LUNE</title>
+  <link rel="stylesheet" href="css/gpt.css" />
 </head>
 <body>
-    <div id="visual">
-        <div class="flower1"></div>
-        <div class="flower2"></div>
-        <div class="flower3"></div>
-        <div class="hero">
-            <img src="images/hero.png" alt="">
-        </div>
-        <header>
-            <h1><img src="../" alt=""></h1>
+  <header>
+    <div class="center_box">
+      <!-- 로고 -->
+      <h1 class="logo"><a href="#">CAFÉ LUNE</a></h1>
 
-            <nav>
-                <ul class="gnb">
-                    <li><a href="#">menu1</a></li>
-                    <li><a href="#">menu2</a></li>
-                    <li><a href="#">menu3</a></li>
-                    <li><a href="#">menu4</a></li>
-                    <li><a href="#">menu5</a></li>
-                </ul>
-            </nav>
-        </header>
-        <div class="playbtn">
-            <audio id="audio" src="music/Gymnop_ie No. 1.mp4" ></audio>
-            <img id="playBtn" src="images/start.png" alt="플레이">
-            <img id="pauseBtn" src="images/pause.png" alt="일시정지">
+      <!-- GNB 메뉴 -->
+      <ul class="gnb">
+        <li><a href="#">모든 상품</a></li>
+        <li><a href="#">시그니처</a></li>
+        <li><a href="#">이벤트</a></li>
+        <li><a href="#">공지사항</a></li>
+        <li><a href="#">매장안내</a></li>
+        <li><a href="#">고객센터</a></li>
+      </ul>
+
+      <!-- 로그인 및 아이콘 -->
+      <div class="util_box">
+        <div class="login_box">
+          <a href="#">로그인</a> | <a href="#">회원가입</a>
         </div>
-        <div class="text">
-            <ul>
-                <li>
-                    <span>'C</span>
-                    <span>a</span>
-                    <span>u</span>
-                    <span>s</span>
-                    <span class="space">e</span>
-                    <span class="space">I</span>
-                    <span>f</span>
-                    <span>e</span>
-                    <span>e</span>
-                    <span class="space">l</span>
-                    <span>s</span>
-                    <span>o</span>
-                </li>
-                <li>
-                    <span>c</span>
-                    <span>o</span>
-                    <span>m</span>
-                    <span>f</span>
-                    <span>o</span>
-                    <span>r</span>
-                    <span>t</span>
-                    <span>a</span>
-                    <span>b</span>
-                    <span>l</span>
-                    <span>e</span>
-                </li>
-                <li>
-                    <span>w</span>
-                    <span>i</span>
-                    <span>t</span>
-                    <span class="space">h</span>
-                    <span>y</span>
-                    <span>o</span>
-                    <span>u</span>
-                    <span>.</span>
-                </li>
-            </ul>
-        </div>
+        <ul class="icon">
+          <li><a href="#"><img src="images/search.png" alt="검색" /></a></li>
+          <li><a href="#"><img src="images/bell.png" alt="알림" /></a></li>
+          <li><a href="#"><img src="images/my.png" alt="마이페이지" /></a></li>
+        </ul>
+      </div>
     </div>
-<script>setTimeout(function() {
-    audio.play().then(function() {
-        playBtn.style.display = 'none';
-        pauseBtn.style.display = 'inline';
-        pauseBtn.classList.add('pulse'); // 애니메이션 효과 추가
+  </header>
+  <div id="visual">
+    <div class="img_box">
+      <ul class="left">
+        <li><a href="#"><img src="images/main1.png" alt=""><p>시간이 지나도 <br>잊히지 않는 한 모금</p></a>
+        </li>
+        <div class="text_box"><em>CAFÉ LUNE Signature Coffee</em></div>
+      </ul>
+      <ul class="right">
+        <li class="first"><a href="#"><img src="images/main2.png" alt=""><p>최고급 원두</p></a></li>
+        <li class="second"><a href="#"><img src="images/main3.png" alt=""><p>Drip Coffee</p></a></li>
+        <li class="third"><a href="#"><img src="images/main4.png" alt=""><p>Decaffeinated Coffee</p></a></li>
+      </ul>
+    </div>
+  </div>
+  <div id="section">
+    <div class="sec_box">
+      <h2>CAFÉ LUNE
+        <em>에서</em>
+      </h2>
+      <p>기다리고 있습니다.</p>
+    </div>
+     <div class="sec2_box">
+       <span>원두가 가장 잘 자라는 기후와 비옥한 토양을 가진 커피벨트에서 
+        <br>생산된 고품질의 원두를 엄선하여 더욱 완벽한 맛과 풍미를 제공합니다.</span>
+     </div class="sec2_box">
+    </div>
+  </div>
+<div id="content">
+  <div class="box_main">
+    <div class="content_box1">
+      <div class="main_text">COFFEE</div>
+      <div class="sub_text">커피 본연의 신선함을 제공합니다.</div>
+      <div class="content_text">다년간 축적된 CAFÉ LUNE만의 원두 관리 노하우는 단순한 기술 그 이상입니다<br> 원두의 생육 환경부터 수확, 선별, 보관, 그리고 로스팅 커피 한 잔에 담기는 모든 과정<br>에 세심한 철학과 정성이 깃들어 있습니다.<br>
+  CAFÉ LUNE은 각 원두가 지닌 고유의 향미를 왜곡 없이 전달하기 위해<br> 자연의 흐름을 거스르지 않고, 본연의 풍미를 최대한 살리는 정제된 방식만을 고수합니다.<br> 이러한 원칙 아래, 우리는 언제나 신선하고 깊이 있는 커피만을 제공합니다.
+  한 잔을 마주하는 순간,<br> 그 안에 담긴 시간과 정성을 느끼실 수 있을 것입니다.</div>
+</div>
+      <div class="bd_box">
+        <div class="box">
+            <div class="main_img"><img src="images/cont_img.png" alt=""></div>
+        </div>
+      </div> 
+    </div>
+  </div>
+<div id="content2">
+  <div class="box_main2">
+  <div class="content_box2">
+    <div class="main_text">BINGSU</div>
+    <div class="sub_text">한 그릇의 정제된 여름, CAFÉ LUNE 빙수</div>
+    <div class="content_text">CAFÉ LUNE은 다년간 축적된 커피 원두 관리 노하우를 바탕으로, 원재료가 지닌 본연<br>의 맛과 향을 온전히 살려내는 데 집중해왔습니다.  빙수 또한 그 연장선 위에 있습니다.<br>
+한 알 한 알 선별한 재료, 정제된 설탕의 단맛, 적정 온도에서 숙성시킨 얼음<br> CAFÉ LUNE 빙수는 단순한 디저트가 아닌, 정성과 균형이 어우러진 여름의 한 컷입니<br>다. 입 안 가득 퍼지는 부드러움과 함께, 고급스러운 풍미를 경험해보세요.<br>
+CAFÉ LUNE이 빚어낸 빙수의 기준, 지금 만나보세요.</div>
+  </div>
+    <div class="bd_box">
+      <div class="box">
+      <div class="main_img"><img src="images/cont2_img.png" alt=""></div>
+    </div>
+    </div>
+  
+  </div>
+</div>
+<div id="content3">
+  <div class="box_main3">
+  <div class="content_box3">
+    <div class="main_text">CAKE</div>
+    <div class="sub_text">케이크도 하나의 예술, CAFÉ LUNE</div>
+    <div class="content_text">CAFÉ LUNE의 시그니처 케이크는 단순한 디저트를 넘어 하나의 계절을 담고, 감각을<br> 깨우는 예술의 조각입니다.<br> 
+ 다년간 축적된 원두 철학을 바탕으로<br> 케이크에도 재료 하나하나에 의미와 정성을 담았습니다. 신선한 크림, 풍미 깊은 가나<br>슈, 그리고 완벽하게 조화된 시트의 결까지<br> 모든 과정은 고급스러운 한 접시를 위한 섬세한 설계입니다.<br>
+커피가 깊이를 선사한다면,<br> CAFÉ LUNE의 케이크는 그 곁에서 감미로운 여운을 남깁니다.<br>
+기억에 남는 하루를 위한 한 조각,<br> CAFÉ LUNE이 준비한 케이크로 완성해보세요.</div>
+  </div>
+    <div class="bd_box">
+      <div class="box">
+      <div class="main_img"><img src="images/cont3_img.png" alt=""></div>
+    </div>
+    </div>
+  
+  </div>
+</div>
+<section>
+  <div class="section_box1">
+    <div class="section_img1">
+      <div class="sh_box"></div>
+      <div class="sec_img"><img src="images/section_img1.png" alt=""></div>
+    </div>
+    <div class="text"><strong>New Collection</strong><br><p>CAFÉ LUNE만의 특별함</p></div>
+  </div>
+  </div>
+  <div class="section_box2">
+    <div class="vector_box">
+      <div class="vector2"><img src="images/line_short.png" alt=""></div>
+      <div class="vector"><img src="images/line_long.png" alt=""></div>
+      <div class="text"><p>트렌드는 달라져도, CAFÉ LUNE은 언제나<br>정직한 재료와 깊은 손끝의 정성으로 완성합니다</p></div>
+  </div>
+     <div class="section_img2">
+      <div class="sh_box"></div>
+      <div class="sec_img"><img src="images/section_img2.png" alt=""></div>
+    </div>
+    <!-- <h1>CAFÉ LUNE</h1> -->
+    
+  </div>
+</section>
+<div class="map_box">
+  <div class="map"><!--
+	* 카카오맵 - 약도서비스
+	* 한 페이지 내에 약도를 2개 이상 넣을 경우에는
+	* 약도의 수 만큼 소스를 새로 생성, 삽입해야 합니다.
+-->
+<!-- 1. 약도 노드 -->
+<div id="daumRoughmapContainer1751446911756" class="root_daum_roughmap root_daum_roughmap_landing"></div>
 
-        setTimeout(function() {
-            audio.muted = false;
-        }, 1000);
-    }).catch(function(err) {
-        console.log("자동재생 실패:", err);
-    });
-}, 5000);
+<!-- 2. 설치 스크립트 -->
+<script charset="UTF-8" class="daum_roughmap_loader_script" src="https://ssl.daumcdn.net/dmaps/map_js_init/roughmapLoader.js"></script>
 
-// 재생 버튼
-playBtn.addEventListener('click', function() {
-    audio.play();
-    audio.muted = false;
-    playBtn.style.display = 'none';
-    pauseBtn.style.display = 'inline';
-    pauseBtn.classList.add('pulse'); // 재생 시 애니메이션 추가
-});
-
-// 일시정지 버튼
-pauseBtn.addEventListener('click', function() {
-    audio.pause();
-    pauseBtn.style.display = 'none';
-    playBtn.style.display = 'inline';
-    pauseBtn.classList.remove('pulse'); // 정지 시 애니메이션 제거
-});
-
-// 음악이 끝나면 버튼 초기화
-audio.addEventListener('ended', function() {
-    pauseBtn.style.display = 'none';
-    playBtn.style.display = 'inline';
-    pauseBtn.classList.remove('pulse'); // 음악 끝나면 애니메이션 제거
-});</script>
+<!-- 3. 실행 스크립트 -->
+<script charset="UTF-8">
+	new daum.roughmap.Lander({
+		"timestamp" : "1751446911756",
+		"key" : "4jk5r5kbqsf",
+		"mapWidth" : "660px",
+		"mapHeight" : "822px"
+	}).render();
+</script></div>
+  <div class="map_content"></div>
+  <div class="address">
+    <ul>
+      <li><a href="#"><strong></strong><p></p><em></em></a></li>
+      <li><a href="#"><strong></strong><p></p><em></em></a></li>
+      <li><a href="#"><strong></strong><p></p><em></em></a></li>
+      <li><a href="#"><strong></strong><p></p><em></em></a></li>
+      <li><a href="#"><strong></strong><p></p><em></em></a></li>
+    </ul>
+  </div>
+</div>
 </body>
 </html>
